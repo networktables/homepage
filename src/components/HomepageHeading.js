@@ -6,9 +6,6 @@ import {
   Grid,
   Image,
 } from 'semantic-ui-react';
-import header from '../images/header.png';
-import cocktailIcon from '../images/cocktail-icon.png';
-import OverviewButton from './OverviewButton';
 
 const HomepageHeading = ({ mobile }) => (
   <Container fluid>
@@ -24,29 +21,9 @@ const HomepageHeading = ({ mobile }) => (
          borderBottom: '3px solid #fff'
       }}
     />
-    <Container>
-      <Grid columns={2}>
-        <Grid.Column>
-          <OverviewButton
-          heading={'Ontdek Cocktails'}
-          subHeading={'Bekijk al onze cocktails en recepten'}
-          link={'/cocktails'}
-          image={cocktailIcon}
-        />
-        </Grid.Column>
-        <Grid.Column>
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-        </Grid.Column>
-      </Grid>
-    </Container>
     <Header
       as='h2'
-      content='Mr. Flavour voor horeca ondernemers.'
+      content='Mrtesasdads.'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -55,52 +32,6 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Container>
-      <Grid columns={3}>
-        <Grid.Column>
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-        </Grid.Column>
-        <Grid.Column>
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-        </Grid.Column>
-        <Grid.Column>
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-          <OverviewButton
-            heading={'Ontdek Cocktails'}
-            subHeading={'Bekijk al onze cocktails en recepten'}
-            link={'/cocktails'}
-            image={cocktailIcon}
-          />
-        </Grid.Column>
-      </Grid>
-    </Container>
   </Container>
 );
 

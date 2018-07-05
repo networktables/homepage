@@ -9,9 +9,6 @@ import {
   Segment,
   Sidebar,
 } from 'semantic-ui-react';
-import {withRouter} from 'react-router';
-import HomepageHeading from './HomepageHeading';
-import Heading from './Heading';
 
 
 class MobileContainer extends Component {
@@ -64,9 +61,7 @@ class MobileContainer extends Component {
                   </Menu.Item>
                 </Menu>
               </Container>
-              {this.props.match.path === '/' ||  !this.props.match.path ? <HomepageHeading mobile /> : <Heading mobile /> }
             </Segment>
-
             {children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
@@ -79,4 +74,4 @@ MobileContainer.propTypes = {
   children: PropTypes.node,
 };
 
-export default withRouter(MobileContainer);
+export default MobileContainer;

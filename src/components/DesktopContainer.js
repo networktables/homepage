@@ -10,8 +10,6 @@ import {
   Visibility,
 } from 'semantic-ui-react';
 import HomepageHeading from './HomepageHeading';
-import Heading from './Heading';
-
 
 class DesktopContainer extends Component {
   state = {};
@@ -57,7 +55,6 @@ class DesktopContainer extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-            {this.props.match.path === '/' ||  !this.props.match.path ? <HomepageHeading /> : <Heading /> }
           </Segment>
         </Visibility>
         {children}
@@ -70,4 +67,4 @@ DesktopContainer.propTypes = {
   children: PropTypes.node,
 };
 
-export default withRouter(DesktopContainer);
+export default DesktopContainer;
