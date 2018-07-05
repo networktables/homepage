@@ -14,6 +14,7 @@ import {
 } from 'semantic-ui-react';
 
 import CircularProgressbar from 'react-circular-progressbar';
+
 import ResponsiveContainer from '../components/ResponsiveContainer';
 import './index.css'
 
@@ -22,6 +23,9 @@ import { I18n } from 'react-i18next'
 import i18n from '../components/i18n'
 import 'semantic-ui-css/semantic.min.css';
 import 'react-circular-progressbar/dist/styles.css';
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+import logo from '../assets/images/logo.png';
 
 class Layout extends React.Component {
   render() {
@@ -48,14 +52,14 @@ class Layout extends React.Component {
                     >
                       Do you regonize any of these problems?
                     </Divider>
-                    <Item.Group>
+                    <Item.Group divided>
                       <Grid columns={2}>
                         <Grid.Row>
                           <Grid.Column>
                           <Item>
-                          <Item.Image size='small' src='/images/wireframe/image.png' />
+                          <Item.Image size='huge' avatar src='https://placekitten.com/150/150' style={{float: "left"}} />
 
-                          <Item.Content>
+                          <Item.Content verticalAlign='top' style={{float: "right"}}>
                             <Item.Header as='a'>Cute Dog</Item.Header>
                             <Item.Description>
                               <p>test</p>
@@ -66,9 +70,9 @@ class Layout extends React.Component {
                           </Grid.Column>
                           <Grid.Column>
                             <Item>
-                              <Item.Image size='small' src='/images/wireframe/image.png' />
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
 
-                              <Item.Content>
+                              <Item.Content verticalAlign='top' style={{float: "right"}}>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
                                   <p>test</p>
@@ -81,9 +85,9 @@ class Layout extends React.Component {
                         <Grid.Row>
                           <Grid.Column>
                           <Item>
-                          <Item.Image size='small' src='/images/wireframe/image.png' />
+                          <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
 
-                          <Item.Content>
+                            <Item.Content verticalAlign='top' style={{float: "right"}}>
                             <Item.Header as='a'>Cute Dog</Item.Header>
                             <Item.Description>
                               <p>test</p>
@@ -94,9 +98,9 @@ class Layout extends React.Component {
                           </Grid.Column>
                           <Grid.Column>
                             <Item>
-                              <Item.Image size='small' src='/images/wireframe/image.png' />
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
 
-                              <Item.Content>
+                              <Item.Content verticalAlign='top' style={{float: "right"}}>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
                                   <p>test</p>
@@ -108,9 +112,9 @@ class Layout extends React.Component {
                         </Grid.Row>
                         <Grid.Row>
                           <Grid.Column>
-                          <Item>
-                          <Item.Image size='small' src='/images/wireframe/image.png' />
-                          <Item.Content>
+                          <Item verticalAlign='middle'>
+                            <Item.Image size='huge' verticalAlign='middle' avatar src='https://placekitten.com/150/150' />
+                            <Item.Content verticalAlign='middle' style={{float: "right"}}>
                             <Item.Header as='a'>Cute Dog</Item.Header>
                             <Item.Description>
                               <p>test</p>
@@ -121,8 +125,8 @@ class Layout extends React.Component {
                           </Grid.Column>
                           <Grid.Column>
                             <Item>
-                              <Item.Image size='small' src='/images/wireframe/image.png' />
-                              <Item.Content>
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
+                              <Item.Content verticalAlign='middle' style={{float: "right"}}>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
                                   <p>test</p>
@@ -202,7 +206,7 @@ class Layout extends React.Component {
                           </p>
                         </Grid.Column>
                         <Grid.Column floated='right' width={6}>
-                          <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+                          <Image bordered rounded size='large' src='https://placekitten.com/400/300' />
                         </Grid.Column>
                       </Grid.Row>
                       <Grid.Row>
@@ -215,6 +219,41 @@ class Layout extends React.Component {
                 </Segment>
                 <Segment inverted vertical style={{ padding: '5em 0em' }}>
                   <Container>
+                    <Button size='huge'>Check Them Out</Button>
+                  </Container>
+                  <Divider
+                    as='h4'
+                    className='header'
+                    horizontal
+                    style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+                  >
+                    How do we do this?
+                  </Divider>
+                  <Carousel
+                  slidesPerPage={5}
+                  slidesPerScroll={2}
+                  animationSpeed={1500}
+                  autoPlay={3000}
+                  offset={50}
+                  itemWidth={250}
+                  clickToChange
+                  infinite
+                  centered
+                >
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                  <img src={logo} />
+                </Carousel>
+                  <Container style={{ margin: '3em 0em' }}>
                     <Grid divided inverted stackable>
                       <Grid.Row>
                         <Grid.Column width={3}>

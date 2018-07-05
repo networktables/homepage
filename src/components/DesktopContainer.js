@@ -9,7 +9,8 @@ import {
   Segment,
   Visibility,
 } from 'semantic-ui-react';
-import Link from 'gatsby-link'
+import logo from '../assets/images/logo.png';
+import Link from 'gatsby-link';
 
 class DesktopContainer extends Component {
   state = {};
@@ -38,12 +39,12 @@ class DesktopContainer extends Component {
             <Container>
               <Link to="/page-2/">
                 <Image
-                  src='../assets/images/logo.png'
+                  src={logo}
                   size='medium'
                 />
               </Link>
             </Container>
-            <Container>
+            <Container float={'right'}>
               <Menu
                 fixed={fixed ? 'top' : null}
                 inverted={!fixed}
