@@ -1,0 +1,20 @@
+.container {
+    margin-bottom: 1.45rem;
+}
+.header {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+
+.tagLine {
+    font-size: 11px;
+    margin-top: 10px;
+    color: #000000;
+    font-style: italic;
+}
+
+.logo {
+    width: 260px;
+    margin-bottom: 0;
+}
