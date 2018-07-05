@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import {withRouter} from 'react-router';
 import {
   Button,
   Container,
   Menu,
   Responsive,
+  Image,
   Segment,
   Visibility,
 } from 'semantic-ui-react';
-import HomepageHeading from './HomepageHeading';
+import Link from 'gatsby-link'
 
 class DesktopContainer extends Component {
   state = {};
@@ -33,28 +33,37 @@ class DesktopContainer extends Component {
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
+            position='right'
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
+            <Container>
+              <Link to="/page-2/">
+                <Image
+                  src='../assets/images/logo.png'
+                  size='medium'
+                />
+              </Link>
+            </Container>
+            <Container>
+              <Menu
+                fixed={fixed ? 'top' : null}
+                inverted={!fixed}
+                pointing={!fixed}
+                secondary={!fixed}
+                size='large'
+              >
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
                 <Menu.Item as='a'>Work</Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
+                <Menu.Item>
                   <Button as='a' inverted={!fixed}>
                     Log in
                   </Button>
                 </Menu.Item>
-              </Container>
-            </Menu>
+              </Menu>
+            </Container>
           </Segment>
         </Visibility>
         {children}
