@@ -34,9 +34,9 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'>Company</Menu.Item>
-            <Menu.Item as='a'>Careers</Menu.Item>
+            <Menu.Item as='a'>Solutions</Menu.Item>
+            <Menu.Item as='a'>Pricing</Menu.Item>
+            <Menu.Item as='a'>Docs</Menu.Item>
           </Sidebar>
 
           <Sidebar.Pusher
@@ -57,7 +57,7 @@ class MobileContainer extends Component {
                   </Menu.Item>
                   <Menu.Item position='right'>
                     <Button as='a' inverted>
-                      Log in
+                      Request a demo
                     </Button>
                   </Menu.Item>
                 </Menu>

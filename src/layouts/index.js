@@ -55,27 +55,23 @@ class Layout extends React.Component {
                     <Item.Group divided>
                       <Grid columns={2}>
                         <Grid.Row>
-                          <Grid.Column>
-                          <Item>
-                          <Item.Image size='huge' avatar src='https://placekitten.com/150/150' style={{float: "left"}} />
-
-                          <Item.Content verticalAlign='top' style={{float: "right"}}>
-                            <Item.Header as='a'>Cute Dog</Item.Header>
-                            <Item.Description>
-                              <p>test</p>
-                              <p>Many people also have their own barometers for what makes a cute dog.</p>
-                            </Item.Description>
-                          </Item.Content>
-                        </Item>
-                          </Grid.Column>
-                          <Grid.Column>
+                          <Grid.Column textAlign='center'>
                             <Item>
                               <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
-
-                              <Item.Content verticalAlign='top' style={{float: "right"}}>
+                              <Item.Content>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
-                                  <p>test</p>
+                                  <p>Many people also have their own barometers for what makes a cute dog.</p>
+                                </Item.Description>
+                              </Item.Content>
+                            </Item>
+                          </Grid.Column>
+                          <Grid.Column textAlign='center'>
+                            <Item>
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
+                              <Item.Content>
+                                <Item.Header as='a'>Cute Dog</Item.Header>
+                                <Item.Description>
                                   <p>Many people also have their own barometers for what makes a cute dog.</p>
                                 </Item.Description>
                               </Item.Content>
@@ -83,27 +79,23 @@ class Layout extends React.Component {
                           </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
-                          <Grid.Column>
-                          <Item>
-                          <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
-
-                            <Item.Content verticalAlign='top' style={{float: "right"}}>
-                            <Item.Header as='a'>Cute Dog</Item.Header>
-                            <Item.Description>
-                              <p>test</p>
-                              <p>Many people also have their own barometers for what makes a cute dog.</p>
-                            </Item.Description>
-                          </Item.Content>
-                        </Item>
-                          </Grid.Column>
-                          <Grid.Column>
+                          <Grid.Column textAlign='center'>
                             <Item>
                               <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
-
-                              <Item.Content verticalAlign='top' style={{float: "right"}}>
+                                <Item.Content>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
-                                  <p>test</p>
+                                  <p>Many people also have their own barometers for what makes a cute dog.</p>
+                                </Item.Description>
+                              </Item.Content>
+                            </Item>
+                          </Grid.Column>
+                          <Grid.Column textAlign='center'>
+                            <Item>
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
+                              <Item.Content>
+                                <Item.Header as='a'>Cute Dog</Item.Header>
+                                <Item.Description>
                                   <p>Many people also have their own barometers for what makes a cute dog.</p>
                                 </Item.Description>
                               </Item.Content>
@@ -111,25 +103,23 @@ class Layout extends React.Component {
                           </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
-                          <Grid.Column>
-                          <Item verticalAlign='middle'>
-                            <Item.Image size='huge' verticalAlign='middle' avatar src='https://placekitten.com/150/150' />
-                            <Item.Content verticalAlign='middle' style={{float: "right"}}>
-                            <Item.Header as='a'>Cute Dog</Item.Header>
-                            <Item.Description>
-                              <p>test</p>
-                              <p>Many people also have their own barometers for what makes a cute dog.</p>
-                            </Item.Description>
-                          </Item.Content>
-                        </Item>
-                          </Grid.Column>
-                          <Grid.Column>
+                          <Grid.Column textAlign='center'>
                             <Item>
                               <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
-                              <Item.Content verticalAlign='middle' style={{float: "right"}}>
+                              <Item.Content>
+                              <Item.Header as='a'>Cute Dog</Item.Header>
+                              <Item.Description>
+                                <p>Many people also have their own barometers for what makes a cute dog.</p>
+                              </Item.Description>
+                            </Item.Content>
+                          </Item>
+                          </Grid.Column>
+                          <Grid.Column textAlign='center'>
+                            <Item>
+                              <Item.Image size='huge' avatar src='https://placekitten.com/150/150' />
+                              <Item.Content>
                                 <Item.Header as='a'>Cute Dog</Item.Header>
                                 <Item.Description>
-                                  <p>test</p>
                                   <p>Many people also have their own barometers for what makes a cute dog.</p>
                                 </Item.Description>
                               </Item.Content>
@@ -227,19 +217,19 @@ class Layout extends React.Component {
                     horizontal
                     style={{ margin: '3em 0em', textTransform: 'uppercase' }}
                   >
-                    How do we do this?
+                    For who do we do this?
                   </Divider>
                   <Carousel
-                  slidesPerPage={5}
-                  slidesPerScroll={2}
-                  animationSpeed={1500}
-                  autoPlay={3000}
-                  offset={50}
-                  itemWidth={250}
-                  clickToChange
-                  infinite
-                  centered
-                >
+                    slidesPerPage={5}
+                    slidesPerScroll={2}
+                    animationSpeed={1500}
+                    autoPlay={3000}
+                    offset={50}
+                    itemWidth={250}
+                    clickToChange
+                    infinite
+                    centered
+                  >
                   <img src={logo} />
                   <img src={logo} />
                   <img src={logo} />
