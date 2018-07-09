@@ -61,11 +61,21 @@ class DesktopContainer extends Component {
                 <img src={logo} width="300" height="44" alt={'logo'} style={{marginTop: 40}}/>
                 <Menu.Menu position='right'>
                 <Menu.Item as='a' active>
-                  Home
+                  <Link to={'/'}>Home</Link>
                 </Menu.Item>
-                <Menu.Item as='a'>Solutions</Menu.Item>
-                <Menu.Item as='a'>Pricing</Menu.Item>
-                <Menu.Item as='a'>Docs</Menu.Item>
+                <Menu.Item as='a'>
+                  <Link to={'solutions'}>Solutions</Link>
+                </Menu.Item>
+                <Menu.Item as='a'>
+                  <Link to={'pricing'}>
+                    Pricing
+                  </Link>
+                </Menu.Item>
+                <Menu.Item as='a'>
+                  <Link to={'docs'}>
+                    Docs
+                  </Link>
+                </Menu.Item>
                 <Menu.Item>
                   <Button as='a' inverted={!fixed}>
                     Request a demo

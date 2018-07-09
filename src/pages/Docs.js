@@ -16,7 +16,7 @@ import {
 import CircularProgressbar from 'react-circular-progressbar';
 
 import ResponsiveContainer from '../components/ResponsiveContainer';
-import './index.css'
+import '../layouts/index.css'
 
 import { I18n } from 'react-i18next'
 
@@ -27,7 +27,7 @@ import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import logo from '../assets/images/logo.png';
 
-class Solutions extends React.Component {
+class Docs extends React.Component {
   render() {
     return (
       <I18n ns="translations">
@@ -278,8 +278,8 @@ class Solutions extends React.Component {
   }
 }
 
-Solutions.propTypes = {
+Docs.propTypes = {
   children: PropTypes.func,
 };
 
-export default Solutions
+export default Docs
